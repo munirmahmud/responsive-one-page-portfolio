@@ -138,3 +138,43 @@ a {
     margin-bottom: 2.5rem;
     color: rgba(255, 255, 255, .5);
 }
+
+/* MAIN CONTENT */
+.main {
+    width: calc(100% - 26rem);
+    transform: translateX(26rem);
+}
+
+section:not(.hero) {
+    padding: 5rem 0;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    background-image: url("../images/hero_background.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.name-heading {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10vw;
+    font-family: var(--heading-font-family);
+    color: var(--light-color);
+    z-index: 1;
+    user-select: none;
+}
+.hero-person-image {
+    max-width: 95%;
+    user-select: none;
+    -webkit-user-drag: name;
+    margin-top: auto;
+    z-index: 2;
+    position: relative;
+}
