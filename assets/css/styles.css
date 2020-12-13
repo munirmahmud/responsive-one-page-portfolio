@@ -427,3 +427,64 @@ section:not(.hero) {
     padding: 3rem 0;
     line-height: 2;
 }
+
+/* BLOCKQUOTE */
+.motto {
+    height: 35vh;
+    background-image: url('../images/quote-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
+    z-index: 1;
+}
+.motto::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.motto .container {
+    height: 100%;
+    display: flex;
+}
+.quote-wrapper {
+    margin: auto;
+    max-width: 50rem;
+    text-align: center;
+    color: var(--light-color);
+    font-weight: 400;
+    z-index: 1;
+}
+.quote {
+    font-size: 2rem;
+    padding: 0.5rem;
+    position: relative;
+}
+.quote::before, .quote::after {
+    position: absolute;
+    font-size: 15rem;
+    width: 5rem;
+    height: 5rem;
+    font-family: sans-serif;
+}
+
+.quote::before {
+    content: open-quote;
+    top: -5rem;
+    left: -5rem;
+}
+.quote::after {
+    content: close-quote;
+    top: -.5rem;
+    right: -6rem;
+}
+.quote-by {
+    display: block;
+    text-align: right;
+    margin-top: 2rem;
+}
