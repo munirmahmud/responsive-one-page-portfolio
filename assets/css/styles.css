@@ -148,7 +148,6 @@ a {
 
 section:not(.hero) {
     padding: 10rem 0;
-    background-color: var(--light-color)
 }
 
 /* HERO SECTION */
@@ -245,6 +244,10 @@ section:not(.hero) {
     100% {
         opacity: 1;
     }
+}
+
+.about-me {
+    background-color: var(--light-gray-color);
 }
 
 /* About Section */
@@ -554,6 +557,9 @@ section.work-experience {
 }
 
 /* PORTFOLIO */
+.portfolio {
+    background-color: var(--light-gray-color);
+}
 .portfolio .grid {
     grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
 }
