@@ -833,9 +833,6 @@ section.work-experience {
 }
 
 @media screen and (orientation: landscape) and (max-width: 1000px) {
-    .nav {
-        overflow-y: scroll;
-    }
     .hero {
         height: initial;
         min-height: 100vh;
