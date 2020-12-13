@@ -686,3 +686,54 @@ section.work-experience {
     border-radius: 3px;
     cursor: pointer;
 }
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1030px) {
+    .nav {
+        transform: translateX(-27rem);
+        transition: transform .5s;
+    }
+
+    .is-open .nav {
+        transform: translateX(0);
+    }
+
+    .hamburger-menu {
+        display: flex;
+        width: 5rem;
+        height: 5rem;
+        background-color: var(--dark-color);
+        color: var(--light-color);
+        position: fixed;
+        top: 0;
+        left: 0;
+        font-size: 2.6rem;
+        cursor: pointer;
+        transition: transform .5s;
+        z-index: 9999;
+    }
+
+    .hamburger-menu i {
+        margin: auto;
+    }
+
+    .close {
+        display: none;
+    }
+    
+    .is-open .hamburger-menu {
+        transform: translateX(21rem);
+    }
+
+    .is-open .close {
+        display: block;
+    }
+    .is-open .open {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+        transform: initial;
+    }
+}
