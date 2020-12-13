@@ -632,3 +632,57 @@ section.work-experience {
 .btn-blue:hover {
     background-color: #2977b1;
 }
+
+/* CONTACT SECTION */
+.contact-info-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-info {
+    flex-basis: 45%;
+}
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+.info-item-icon {
+    background-color: var(--light-gray-color);
+    display: flex;
+    width: 10rem;
+    font-size: 5rem;
+    color: var(--blue-color);
+    border-radius: 3px;
+}
+.info-item-icon i {
+    margin: auto;
+}
+.data-wrapper {
+    margin-left: 2rem;
+}
+.info-item-data {
+    display: block;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+.contact-form {
+    flex: 1;
+}
+.contact-form .input,
+.contact-form textarea {
+    width: 100%;
+    background-color: var(--light-gray-color);
+    font-family: var(--body-font-family);
+    color: var(--body-font-color);
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+.contact-form .btn {
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
